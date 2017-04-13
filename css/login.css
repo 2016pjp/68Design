@@ -1,0 +1,109 @@
+.body{
+	margin:0px;
+	padding:0px;
+}
+.line{
+	width: 100%;
+	height: 10px;
+	background-color: #008040;
+}
+.login-main{
+	width: 450px;
+	height: 666px;
+	margin:100px auto 50px;
+	overflow: hidden;
+}
+div>.logo{
+	width: 450px;
+	height: 33px;
+	text-align: center;
+	margin-bottom: -6px;
+}
+
+.login-main .t-login{
+	font-size: 14px;
+	text-align: left;
+}
+
+.login-main .t-login th,.login-main .t-login td{
+	padding:10px 5px;
+	vertical-align: top;
+}
+.login-main .t-login th{
+	padding-top: 18px;
+	text-align: right;
+	font-weight: normal;
+
+}
+.login-main .login-top{
+	font-size: 16px;
+}
+.login-main .login-top>a{
+	float: left;
+	text-decoration: none;
+	display: inline-block;;
+	color: #444;
+	padding:10px 30px;
+}
+.login-main .login-top .preson{
+	border-bottom: 2px solid #008040;
+}
+.login-top .preson:hover{
+	background: #f0f0f0;
+}
+.login-top .company:hover{
+	background: #f0f0f0;
+}
+.login-main .put{
+	width: 228px;
+	line-height: 1em;
+	padding:10px;
+	border:1px solid #ccc;
+	height: 18px;
+}
+.login-main td select{
+	width: 250px;
+	padding:10px;
+	color: rgba(136,136,136);
+}
+.login-main td select option{
+	color: #888;
+}
+/*input{
+	font-family: inherit;
+	font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}*/
+input #quest{
+	padding:10px 0 0 0 ;
+}
+.ccg{
+	width:70px;
+	padding:10px;
+	border:0;
+	color: #fff;
+	background-color: #666;
+	cursor:pointer;
+}
+.td-submit{
+	width: 250px;
+    font-size: 16px;
+    padding: 14px 0;
+    border: 0;
+    color: #fff;
+    background: #008040
+}
+.login-main td>a{
+	color: #008400;
+	text-decoration: underline;
+}
+.login-main td>a:hover{
+	color: #d33;
+}
+td option{
+	font-weight: normal;
+	display: block;
+	padding:0px 2px 1px;
+}
+
