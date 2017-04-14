@@ -512,8 +512,11 @@ body{
  padding-top: 1px;
  
 }
-.hide-list .img{
+.hide-list li .img{
 	transition: transform 1s ease;
+	padding-top: 2px;
+	display: inline-block;
+
 }
 .filter-txt-01:hover .flash-03{
 	transform: rotate(180deg);
