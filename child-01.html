@@ -174,8 +174,8 @@
 					<time>发布时间：2017-04-02 14:33</time>
 					<!-- 列表图 -->
 					<div class="picture-list">
-						<a href="#" class="al"></a>
-						<div class="pic-main">
+						<a href="#" class="al" id="al"></a>
+						<div class="pic-main" id="phlist">
 							<div class="pic-left clearfix">
 								<a href="#" ><img src="img/pi1.jpg" alt=""
 								class="img-one" ></a>
@@ -194,9 +194,12 @@
 								<a href="#"><img src="img/pi14.jpg" alt=""></a>
 								<a href="#"><img src="img/pi15.jpg" alt=""></a>
 								<a href="#"><img src="img/pi16.jpg" alt=""></a>
+								<a href="#" ><img src="img/pi1.jpg" alt=""
+								class="img-one" ></a>
 							</div>
 						</div>
-						<a href="#" class="ar"></a>
+						<a href="#" class="ar" id="ar"></a>
+
 					</div>
 					<!-- 本页大图 -->
 					<div class="big-picture">
@@ -400,7 +403,42 @@
 						</a>
 					</li>
 				</ul>
-		</div>		
+		</div>	
+		<script type="text/javascript">
+			var al=document.getElementById('al');
+			var ar=document.getElementById("ar");
+			var phlist=document.getElementById("phlist");
+			al.onmouseover=function(){
+				// clearInterval(times);
+				times=setInterval(move1 ,24);
+			}
+			al.onmouseout=function(){
+				clearInterval(times)
+			}
+			ar.onmouseover=function(){
+				times=setInterval(move2 ,24);
+			}
+			 ar.onmouseout=function(){
+				 	clearInterval(times)
+			}
+			var times=setInterval(move1 ,24);
+			clearInterval(times);
+
+			function move1(){
+				phlist.scrollLeft+=3;
+				// if(phlist.scrollLeft>=2160){
+				// 	phlist.scrollLeft=0;
+				// }
+			}
+			function move2(){
+				phlist.scrollLeft-=3;
+				// if(phlist.scrollLeft>=2160){
+				// 	phlist.scrollLeft=0;
+				// }
+			}
+			
+							
+		</script>	
 
 </body>
 </html>
